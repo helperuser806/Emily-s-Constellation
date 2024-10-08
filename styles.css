@@ -1,0 +1,255 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.sky {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black; /* Fondo negro */
+}
+
+/* Fondo de estrellas pequeñas */
+.stars-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; /* Asegurarse de que está delante */
+}
+
+/* Estrellas generadas como divs */
+.stars-background div {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: twinkling 0.9s infinite alternate; /* Efecto de parpadeo */
+}
+
+/* Generar estrellas */
+.stars-background div:nth-child(1) { top: 10%; left: 20%; width: 2px; height: 2px; }
+.stars-background div:nth-child(2) { top: 30%; left: 50%; width: 3px; height: 3px; }
+.stars-background div:nth-child(3) { top: 70%; left: 10%; width: 4px; height: 4px; }
+.stars-background div:nth-child(4) { top: 20%; left: 80%; width: 1px; height: 1px; }
+.stars-background div:nth-child(5) { top: 60%; left: 30%; width: 2px; height: 2px; }
+.stars-background div:nth-child(6) { top: 80%; left: 60%; width: 5px; height: 5px; }
+.stars-background div:nth-child(7) { top: 50%; left: 90%; width: 2px; height: 2px; }
+.stars-background div:nth-child(8) { top: 40%; left: 40%; width: 3px; height: 3px; }
+.stars-background div:nth-child(9) { top: 90%; left: 70%; width: 1px; height: 1px; }
+.stars-background div:nth-child(10) { top: 5%; left: 95%; width: 2px; height: 2px; }
+.stars-background div:nth-child(11) { top: 15%; left: 25%; width: 3px; height: 3px; }
+.stars-background div:nth-child(12) { top: 25%; left: 75%; width: 2px; height: 2px; }
+.stars-background div:nth-child(13) { top: 35%; left: 15%; width: 1px; height: 1px; }
+.stars-background div:nth-child(14) { top: 45%; left: 35%; width: 4px; height: 4px; }
+.stars-background div:nth-child(15) { top: 55%; left: 55%; width: 2px; height: 2px; }
+.stars-background div:nth-child(16) { top: 65%; left: 85%; width: 3px; height: 3px; }
+.stars-background div:nth-child(17) { top: 75%; left: 65%; width: 2px; height: 2px; }
+.stars-background div:nth-child(18) { top: 85%; left: 95%; width: 1px; height: 1px; }
+.stars-background div:nth-child(19) { top: 95%; left: 5%; width: 2px; height: 2px; }
+.stars-background div:nth-child(20) { top: 5%; left: 15%; width: 3px; height: 3px; }
+.stars-background div:nth-child(21) { top: 15%; left: 10%; width: 1px; height: 1px; }
+.stars-background div:nth-child(22) { top: 25%; left: 30%; width: 4px; height: 4px; }
+.stars-background div:nth-child(23) { top: 35%; left: 50%; width: 2px; height: 2px; }
+.stars-background div:nth-child(24) { top: 45%; left: 60%; width: 3px; height: 3px; }
+.stars-background div:nth-child(25) { top: 55%; left: 70%; width: 2px; height: 2px; }
+.stars-background div:nth-child(26) { top: 65%; left: 80%; width: 1px; height: 1px; }
+.stars-background div:nth-child(27) { top: 75%; left: 20%; width: 4px; height: 4px; }
+.stars-background div:nth-child(28) { top: 85%; left: 90%; width: 2px; height: 2px; }
+.stars-background div:nth-child(29) { top: 10%; left: 40%; width: 3px; height: 3px; }
+.stars-background div:nth-child(30) { top: 60%; left: 10%; width: 2px; height: 2px; }
+.stars-background div:nth-child(31) { top: 20%; left: 30%; width: 3px; height: 3px; }
+.stars-background div:nth-child(32) { top: 80%; left: 50%; width: 1px; height: 1px; }
+.stars-background div:nth-child(33) { top: 90%; left: 80%; width: 4px; height: 4px; }
+.stars-background div:nth-child(34) { top: 15%; left: 85%; width: 2px; height: 2px; }
+.stars-background div:nth-child(35) { top: 25%; left: 5%; width: 3px; height: 3px; }
+.stars-background div:nth-child(36) { top: 35%; left: 15%; width: 2px; height: 2px; }
+.stars-background div:nth-child(37) { top: 45%; left: 25%; width: 1px; height: 1px; }
+.stars-background div:nth-child(38) { top: 55%; left: 35%; width: 4px; height: 4px; }
+.stars-background div:nth-child(39) { top: 65%; left: 45%; width: 2px; height: 2px; }
+.stars-background div:nth-child(40) { top: 75%; left: 55%; width: 3px; height: 3px; }
+.stars-background div:nth-child(41) { top: 85%; left: 65%; width: 2px; height: 2px; }
+.stars-background div:nth-child(42) { top: 10%; left: 75%; width: 1px; height: 1px; }
+.stars-background div:nth-child(43) { top: 20%; left: 85%; width: 4px; height: 4px; }
+.stars-background div:nth-child(44) { top: 30%; left: 10%; width: 2px; height: 2px; }
+.stars-background div:nth-child(45) { top: 40%; left: 20%; width: 3px; height: 3px; }
+.stars-background div:nth-child(46) { top: 50%; left: 30%; width: 2px; height: 2px; }
+.stars-background div:nth-child(47) { top: 60%; left: 40%; width: 1px; height: 1px; }
+.stars-background div:nth-child(48) { top: 70%; left: 50%; width: 4px; height: 4px; }
+.stars-background div:nth-child(49) { top: 80%; left: 60%; width: 2px; height: 2px; }
+.stars-background div:nth-child(50) { top: 90%; left: 70%; width: 3px; height: 3px; }
+
+/* Efecto de parpadeo para las estrellas */
+@keyframes twinkling {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Estrella grande en el centro */
+.big-star {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px white;
+    animation: pulse 2s infinite;
+    z-index: 2; /* Asegurarse de que está delante */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+.galaxy {
+    position: absolute;
+    width: 100px;  /* Tamaño de la galaxia */
+    height: 100px; /* Tamaño de la galaxia */
+    background-size: cover; /* Para que la imagen cubra el div */
+    animation: rotate 20s infinite linear; /* Rotación continua */
+    opacity: 0.8; /* Opacidad de la galaxia */
+}
+
+/* Galaxia 1 */
+.galaxy-1 {
+    top: 10%;
+    left: 20%;
+    background-image: url('imgs/galaxy1.png'); /* Cambia esto a la ruta de tu imagen */
+}
+
+/* Galaxia 2 */
+.galaxy-2 {
+    top: 50%;
+    left: 60%;
+    background-image: url('imgs/galaxy1.png'); /* Cambia esto a la ruta de tu imagen */
+}
+
+/* Galaxia 3 */
+.galaxy-3 {
+    top: 70%;
+    left: 30%;
+    background-image: url('imgs/galaxy1.png'); /* Cambia esto a la ruta de tu imagen */
+}
+
+/* Animación de rotación */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animación de rotación */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.shooting-stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.shooting-star {
+    position: absolute;
+    width: 2px; /* Ancho de la estrella fugaz */
+    height: 10px; /* Alto de la estrella fugaz */
+    background: white;
+    opacity: 0;
+    animation: shooting-star-animation linear;
+}
+
+@keyframes shooting-star-animation {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-500px) translateX(500px); /* Ajusta la dirección */
+        opacity: 0;
+    }
+}
+
+.wind {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    animation: windEffect 160s linear infinite;
+}
+
+/* Animación de viento */
+@keyframes windEffect {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1000px); /* Moverse hacia la izquierda */
+    }
+}
+
+/* Imagen del nombre "Emily", inicialmente oculta */
+.name-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Oculto al inicio */
+    opacity: 0; /* Iniciar con opacidad 0 */
+    transition: opacity 1s ease-in-out; /* Transición de opacidad */
+}
+
+.name-image img {
+    width: 300px;
+    height: auto;
+    animation: blink 1.3s infinite alternate; /* Animación de parpadeo */
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Movimiento suave de las estrellas de fondo */
+@keyframes moveStars {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-500px, -500px);
+    }
+}
